@@ -1,0 +1,17 @@
+.main-header {
+    @include flex-center(column);
+
+    background-color: $primary-color;
+    color: $text-color-light;
+    padding: 20px;
+}
+
+.nav-list {
+    @include flex-center(row) {
+        gap: 40px;
+    };
+}
+
+.nav-item {
+    list-style-type: none;
+}

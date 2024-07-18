@@ -1,0 +1,32 @@
+$themes-bg: (
+    light: #fff,
+    dark: #333,
+);
+
+$themes-tx: (
+    light: #333,
+    dark: #fff,
+);
+
+@mixin generate-theme() {
+    @each $name, $color in $themes-bg {
+        .theme-#{$name} {
+            background-color: $color;
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+
+    @each $name, $color in $themes-tx {
+        .theme-#{$name} {
+            color: $color;
+        }
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@include generate-theme();

@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.theme-light {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.theme-dark {
+  background-color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+.theme-light {
+  color: #333;
+}
+
+.theme-dark {
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */

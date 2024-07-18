@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="theme-dark" id="main">
+        <h1 class="title">Meu site com temas</h1>
+        <button id="btn-toggle-theme">Tocar tema</button>
+    </main>
+    <script>
+        const btn_toggle_theme = document.getElementById('btn-toggle-theme');
+
+        btn_toggle_theme.addEventListener('click', (event) => {
+            const main = document.getElementById('main');
+
+            const actualClass = main.classList;
+
+            if (actualClass.value.includes('theme-dark')) {
+                actualClass.remove('theme-dark');
+                actualClass.add('theme-light');
+            } else {
+                actualClass.remove('theme-light');
+                actualClass.add('theme-dark');
+            }
+        })
+    </script>
+</body>
+</html>

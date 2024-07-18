@@ -1,0 +1,4 @@
+- [ ] Criar um sistema de grid responsivo que possa ser reutilizado em diferentes breakpoints usando mixins e funções.
+- [X] Crie uma função calculate-percentage que converte um número de colunas em porcentagem.
+- [ ] Crie um mixin responsive-grid que gere as classes de grid para diferentes breakpoints.
+- [ ] Aplique o mixin em um contêiner de grid e certifique-se de que ele funciona corretamente em diferentes tamanhos de tela.

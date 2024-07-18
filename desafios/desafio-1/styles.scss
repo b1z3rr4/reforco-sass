@@ -1,0 +1,49 @@
+@function calculate-percentage($nmr_cols) {
+    @return calc(100% / $nmr_cols);
+}
+
+@mixin responsive-grid() {
+    @media (min-width: 450px) {
+        .container {
+            grid-template-columns: repeat(2, calculate-percentage(2));
+        }
+    }
+
+    @media (min-width: 950px) {
+        .container {
+            grid-template-columns: repeat(3, calculate-percentage(3));
+        }
+    }
+
+    @media (min-width: 1240px) {
+        .container {
+            grid-template-columns: repeat(4, calculate-percentage(4));
+        }
+    }
+
+    @media (max-width: 450px) {
+        .container {
+            grid-template-columns: repeat(1, calculate-percentage(1));
+        }
+    }
+
+    @media (min-width: 2140px) {
+        .container {
+            grid-template-columns: repeat(6, calculate-percentage(6));
+        }
+    }
+}
+
+.container {
+    width: 98vw;
+    display: grid;
+}
+
+.column {
+    background-color: #13b9a5;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+}
+
+@include responsive-grid();

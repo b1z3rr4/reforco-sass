@@ -1,0 +1,4 @@
+- [ ] Defina um mapa de cores para o tema.
+- [ ] Crie uma função theme-color que retorna a cor baseada no tema e tipo de cor.
+- [ ] Crie um mixin generate-theme que gera classes de tema usando loops e condicionais.
+- [ ] Aplique as classes geradas para diferentes elementos e verifique a mudança de tema.

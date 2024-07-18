@@ -1,0 +1,30 @@
+// Functions
+// Condicionais
+
+
+// mobile, tablet, desktop
+// @function define-width($display) {
+//     @if $display == mobile {
+//         @return 450px;
+//     } @else if $display == tablet {
+//         @return 980px;
+//     } @else {
+//         @return 100vw;
+//     }
+// }
+
+// Mais bonito: early return
+
+@function define-width($display) {
+    @if $display == mobile {
+        @return 450px;
+    }
+
+    @if $display == tablet {
+        @return 980px;
+    }
+
+    @if $display == desktop {
+        @return 100vw;
+    }
+}

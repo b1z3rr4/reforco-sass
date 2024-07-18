@@ -1,0 +1,7 @@
+// Extends
+
+.main-footer {
+    @extend .main-header;
+
+    background-color: $secondary-color;
+}
